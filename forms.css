@@ -1,0 +1,22 @@
+body {
+    padding-top: 5rem;
+  }
+
+  html { font-size: 1.5rem; }
+
+  @media (min-width: 576px) {
+      html { font-size: 2rem; }
+  }
+  @media (min-width: 768px) {
+      html { font-size: 1.5rem; }
+  }
+  @media (min-width: 992px) {
+      html { font-size: 1.75rem; }
+  }
+  @media (min-width: 1200px) {
+      html { font-size: 1.5rem; }
+  }
+
+  .form-check{
+    font-size: 1.5rem;
+  }

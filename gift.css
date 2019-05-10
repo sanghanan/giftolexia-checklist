@@ -1,4 +1,4 @@
-.nav-bar{
+/* .nav-bar{
     margin: 0px;
     padding: 0px;
     background-color: #f72552;
@@ -71,4 +71,9 @@
 
 
 
+ */
 
+ .container{
+    position: absolute;
+    top:40%;
+ }
