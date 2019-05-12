@@ -4,18 +4,27 @@
     <title>
         Results
     </title>
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/result.css">
     <script src="js/calculate_results.js" type="text/javascript"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 </head>
 
 <body onload="showResult()">
-    <div class="nav-bar">
-        <p class="nav-name"> Giftolexia</p>
-    </div>
+    
+    <nav class="navbar navbar-dark bg-dark fixed-top" id="fixed-top">
+        <span class="navbar-brand mb-0 h1" id = "header">Giftolexia</span>
+    </nav>
 
-    <p id="result"></p>
+    <label class="res-label">Your result is  <p style = "display:inline;" id="result"></p></label> 
+
+    <div class="container h-100">
+        <div class="row h-100 justify-content-center align-items-center">
+            <a class="btn btn-primary btn-lg" href="Take_test.html" role="button">Retake Test</a>
+        </div>
+    </div>
+    
+
 
 </body>
 
