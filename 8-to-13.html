@@ -4,26 +4,408 @@
     <title>
 
     </title>
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/forms.css">
     <script src="js/calculate_results.js" type="text/javascript"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <div class="nav-bar">
-        <p class="nav-name"> Giftolexia</p>
-    </div>
 
-    <p>
-        Learning Difficulty is not only a problem with reading and spelling.
-        The problem may be perceptual, auditory receptive, memory based or a processing deficit.
-        Some general indications are listed below. Please answer all the questions.
-        If many of these are observed frequently and the child's score is above 90 we request you
-        to consult your school counsellor or any other expert.
-    </p>
+    <nav class="navbar navbar-dark bg-dark fixed-top">
+        <span class="navbar-brand mb-0 h1">Giftolexia</span>
+    </nav>
 
-    <p>1. Still have difficulty with reading </p>
+    <main role="main" class="container">
+        <p class="lead">
+            Learning Difficulty is not only a problem with reading and spelling.
+            The problem may be perceptual, auditory receptive, memory based or a processing deficit.
+            Some general indications are listed below. Please answer all the questions.
+            If many of these are observed frequently and the child's score is above 90 we request you
+            to consult your school counsellor or any other expert.
+        </p>
+        <div class="form-check">
+            <label for="question1set">WRITE QUESTION HERE</label>
+            <div id="question1set">
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="Q1" id="Q1a" value="1" checked>
+                    <label class="form-check-label" for="Q1a">Never</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="Q1" id="Q1b" value="3">
+                    <label class="form-check-label" for="Q1b">Sometimes</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="Q1" id="Q1c" value="5">
+                    <label class="form-check-label" for="Q1c">Very Often</label>
+                </div>
+            </div>
+        </div>
+        <div class="form-check">
+            <label for="question2set">WRITE QUESTION HERE</label>
+            <div id="question2set">
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="Q2" id="Q2a" value="1" checked>
+                    <label class="form-check-label" for="Q2a">Never</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="Q2" id="Q2b" value="3">
+                    <label class="form-check-label" for="Q2b">Sometimes</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="Q2" id="Q2c" value="5">
+                    <label class="form-check-label" for="Q2c">Very Often</label>
+                </div>
+            </div>
+        </div>
+        <div class="form-check">
+            <label for="question3set">WRITE QUESTION HERE</label>
+            <div id="question3set">
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="Q3" id="Q3a" value="1" checked>
+                    <label class="form-check-label" for="Q3a">Never</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="Q3" id="Q3b" value="3">
+                    <label class="form-check-label" for="Q3b">Sometimes</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="Q3" id="Q3c" value="5">
+                    <label class="form-check-label" for="Q3c">Very Often</label>
+                </div>
+            </div>
+        </div>
+        <div class="form-check">
+            <label for="question4set">WRITE QUESTION HERE</label>
+            <div id="question4set">
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="Q4" id="Q4a" value="1" checked>
+                    <label class="form-check-label" for="Q4a">Never</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="Q4" id="Q4b" value="3">
+                    <label class="form-check-label" for="Q4b">Sometimes</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="Q4" id="Q4c" value="5">
+                    <label class="form-check-label" for="Q4c">Very Often</label>
+                </div>
+            </div>
+        </div>
+        <div class="form-check">
+            <label for="question5set">WRITE QUESTION HERE</label>
+            <div id="question5set">
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="Q5" id="Q5a" value="1" checked>
+                    <label class="form-check-label" for="Q5a">Never</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="Q5" id="Q5b" value="3">
+                    <label class="form-check-label" for="Q5b">Sometimes</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="Q5" id="Q5c" value="5">
+                    <label class="form-check-label" for="Q5c">Very Often</label>
+                </div>
+            </div>
+        </div>
+        <div class="form-check">
+            <label for="question6set">WRITE QUESTION HERE</label>
+            <div id="question6set">
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="Q6" id="Q6a" value="1" checked>
+                    <label class="form-check-label" for="Q6a">Never</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="Q6" id="Q6b" value="3">
+                    <label class="form-check-label" for="Q6b">Sometimes</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="Q6" id="Q6c" value="5">
+                    <label class="form-check-label" for="Q6c">Very Often</label>
+                </div>
+            </div>
+        </div>
+        <div class="form-check">
+            <label for="question7set">WRITE QUESTION HERE</label>
+            <div id="question7set">
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="Q7" id="Q7a" value="1" checked>
+                    <label class="form-check-label" for="Q7a">Never</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="Q7" id="Q7b" value="3">
+                    <label class="form-check-label" for="Q7b">Sometimes</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="Q7" id="Q7c" value="5">
+                    <label class="form-check-label" for="Q7c">Very Often</label>
+                </div>
+            </div>
+        </div>
+        <div class="form-check">
+            <label for="question8set">WRITE QUESTION HERE</label>
+            <div id="question8set">
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="Q8" id="Q8a" value="1" checked>
+                    <label class="form-check-label" for="Q8a">Never</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="Q8" id="Q8b" value="3">
+                    <label class="form-check-label" for="Q8b">Sometimes</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="Q8" id="Q8c" value="5">
+                    <label class="form-check-label" for="Q8c">Very Often</label>
+                </div>
+            </div>
+        </div>
+        <div class="form-check">
+            <label for="question9set">WRITE QUESTION HERE</label>
+            <div id="question9set">
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="Q9" id="Q9a" value="1" checked>
+                    <label class="form-check-label" for="Q9a">Never</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="Q9" id="Q9b" value="3">
+                    <label class="form-check-label" for="Q9b">Sometimes</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="Q9" id="Q9c" value="5">
+                    <label class="form-check-label" for="Q9c">Very Often</label>
+                </div>
+            </div>
+        </div>
+        <div class="form-check">
+            <label for="question10set">WRITE QUESTION HERE</label>
+            <div id="question10set">
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="Q10" id="Q10a" value="1" checked>
+                    <label class="form-check-label" for="Q10a">Never</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="Q10" id="Q10b" value="3">
+                    <label class="form-check-label" for="Q10b">Sometimes</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="Q10" id="Q10c" value="5">
+                    <label class="form-check-label" for="Q10c">Very Often</label>
+                </div>
+            </div>
+        </div>
+        <div class="form-check">
+            <label for="question11set">WRITE QUESTION HERE</label>
+            <div id="question11set">
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="Q11" id="Q11a" value="1" checked>
+                    <label class="form-check-label" for="Q11a">Never</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="Q11" id="Q11b" value="3">
+                    <label class="form-check-label" for="Q11b">Sometimes</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="Q11" id="Q11c" value="5">
+                    <label class="form-check-label" for="Q11c">Very Often</label>
+                </div>
+            </div>
+        </div>
+        <div class="form-check">
+            <label for="question12set">WRITE QUESTION HERE</label>
+            <div id="question12set">
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="Q12" id="Q12a" value="1" checked>
+                    <label class="form-check-label" for="Q12a">Never</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="Q12" id="Q12b" value="3">
+                    <label class="form-check-label" for="Q12b">Sometimes</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="Q12" id="Q12c" value="5">
+                    <label class="form-check-label" for="Q12c">Very Often</label>
+                </div>
+            </div>
+        </div>
+        <div class="form-check">
+            <label for="question13set">WRITE QUESTION HERE</label>
+            <div id="question13set">
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="Q13" id="Q13a" value="1" checked>
+                    <label class="form-check-label" for="Q13a">Never</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="Q13" id="Q13b" value="3">
+                    <label class="form-check-label" for="Q13b">Sometimes</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="Q13" id="Q13c" value="5">
+                    <label class="form-check-label" for="Q13c">Very Often</label>
+                </div>
+            </div>
+        </div>
+        <div class="form-check">
+            <label for="question14set">WRITE QUESTION HERE</label>
+            <div id="question14set">
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="Q14" id="Q14a" value="1" checked>
+                    <label class="form-check-label" for="Q14a">Never</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="Q14" id="Q14b" value="3">
+                    <label class="form-check-label" for="Q14b">Sometimes</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="Q14" id="Q14c" value="5">
+                    <label class="form-check-label" for="Q14c">Very Often</label>
+                </div>
+            </div>
+        </div>
+        <div class="form-check">
+            <label for="question15set">WRITE QUESTION HERE</label>
+            <div id="question15set">
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="Q15" id="Q15a" value="1" checked>
+                    <label class="form-check-label" for="Q15a">Never</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="Q15" id="Q15b" value="3">
+                    <label class="form-check-label" for="Q15b">Sometimes</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="Q15" id="Q15c" value="5">
+                    <label class="form-check-label" for="Q15c">Very Often</label>
+                </div>
+            </div>
+        </div>
+        <div class="form-check">
+            <label for="question16set">WRITE QUESTION HERE</label>
+            <div id="question16set">
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="Q16" id="Q16a" value="1" checked>
+                    <label class="form-check-label" for="Q16a">Never</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="Q16" id="Q16b" value="3">
+                    <label class="form-check-label" for="Q16b">Sometimes</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="Q16" id="Q16c" value="5">
+                    <label class="form-check-label" for="Q16c">Very Often</label>
+                </div>
+            </div>
+        </div>
+        <div class="form-check">
+            <label for="question17set">WRITE QUESTION HERE</label>
+            <div id="question17set">
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="Q17" id="Q17a" value="1" checked>
+                    <label class="form-check-label" for="Q17a">Never</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="Q17" id="Q17b" value="3">
+                    <label class="form-check-label" for="Q17b">Sometimes</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="Q17" id="Q17c" value="5">
+                    <label class="form-check-label" for="Q17c">Very Often</label>
+                </div>
+            </div>
+        </div>
+        <div class="form-check">
+            <label for="question18set">WRITE QUESTION HERE</label>
+            <div id="question18set">
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="Q18" id="Q18a" value="1" checked>
+                    <label class="form-check-label" for="Q18a">Never</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="Q18" id="Q18b" value="3">
+                    <label class="form-check-label" for="Q18b">Sometimes</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="Q18" id="Q18c" value="5">
+                    <label class="form-check-label" for="Q18c">Very Often</label>
+                </div>
+            </div>
+        </div>
+        <div class="form-check">
+            <label for="question19set">WRITE QUESTION HERE</label>
+            <div id="question19set">
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="Q19" id="Q19a" value="1" checked>
+                    <label class="form-check-label" for="Q19a">Never</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="Q19" id="Q19b" value="3">
+                    <label class="form-check-label" for="Q19b">Sometimes</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="Q19" id="Q19c" value="5">
+                    <label class="form-check-label" for="Q19c">Very Often</label>
+                </div>
+            </div>
+        </div>
+        <div class="form-check">
+            <label for="question20set">WRITE QUESTION HERE</label>
+            <div id="question20set">
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="Q20" id="Q20a" value="1" checked>
+                    <label class="form-check-label" for="Q20a">Never</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="Q20" id="Q20b" value="3">
+                    <label class="form-check-label" for="Q20b">Sometimes</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="Q20" id="Q20c" value="5">
+                    <label class="form-check-label" for="Q20c">Very Often</label>
+                </div>
+            </div>
+        </div>
+        <div class="form-check">
+            <label for="question21set">WRITE QUESTION HERE</label>
+            <div id="question21set">
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="Q21" id="Q21a" value="1" checked>
+                    <label class="form-check-label" for="Q21a">Never</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="Q21" id="Q21b" value="3">
+                    <label class="form-check-label" for="Q21b">Sometimes</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="Q21" id="Q21c" value="5">
+                    <label class="form-check-label" for="Q21c">Very Often</label>
+                </div>
+            </div>
+        </div>
+        <div class="form-check">
+            <label for="question22set">WRITE QUESTION HERE</label>
+            <div id="question22set">
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="Q22" id="Q22a" value="1" checked>
+                    <label class="form-check-label" for="Q22a">Never</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="Q22" id="Q22b" value="3">
+                    <label class="form-check-label" for="Q22b">Sometimes</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="Q22" id="Q22c" value="5">
+                    <label class="form-check-label" for="Q22c">Very Often</label>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+
+
+    <!-- <p>1. Still have difficulty with reading </p>
     <input type="radio" id="Q1" name="Q1" value="3">Sometimes
     <input type="radio" id="Q1" name="Q1" value="1">Never
     <input type="radio" id="Q1" name="Q1" value="5">Very often
@@ -137,7 +519,7 @@
 
     <div>
         <a href="Giftolexia5.html" class="buttonSubmit" onclick="total()"> SUBMIT</a>
-    </div>
+    </div> -->
 
     <br />
     <br />
