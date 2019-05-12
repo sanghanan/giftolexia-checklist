@@ -26,6 +26,13 @@ function showResult() {
     sum = getSum()
     console.log(sum)
     document.getElementById("result").innerHTML = sum;
+    if (sum < 90) {
+        $('#alert-id').hide();
+        $('.result-line').addClass("my-2");
+    }
+    else {
+        $('#alert-id').show();
+    }
 }
 
 function getSum() {
