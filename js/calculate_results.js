@@ -18,7 +18,38 @@ function total() {
         total = getSum() + parseInt(this.value)
         setSum(total)
         console.log(total)
+
     });
+    var form = $('#form')
+    var navbar = $('.navbar navbar-dark fixed-top')
+
+    // listen for `invalid` events on all form inputs
+    form.find(':input').on('invalid', function (event) {
+        var input = $(this)
+
+        // the first invalid element in the form
+        var first = form.find(':invalid').first()
+
+        // only handle if this is the first invalid input
+        if (input[0] === first[0]) {
+            // height of the nav bar plus some padding
+            var navbarHeight = navbar.height() + 30
+
+            // the position to scroll to (accounting for the navbar)
+            var elementOffset = input.offset().top - navbarHeight
+
+            // the current scroll position (accounting for the navbar)
+            var pageOffset = window.pageYOffset - navbarHeight
+
+            // don't scroll if the element is already in view
+            if (elementOffset > pageOffset && elementOffset < pageOffset + window.innerHeight) {
+                return true
+            }
+
+            // note: avoid using animate, as it prevents the validation message displaying correctly
+            $('html,body').scrollTop(elementOffset)
+        }
+    })
 }
 
 function showResult() {
@@ -42,4 +73,8 @@ function getSum() {
 
 function setSum(value) {
     sessionStorage.setItem("sum", value)
+}
+
+function addRequired() {
+    $('.form-check-input').attr('required', 'required');
 }
