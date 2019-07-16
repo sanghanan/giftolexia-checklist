@@ -1,13 +1,6 @@
-var visited = sessionStorage['visited'];
-if (!visited) {
-    init();
-    sessionStorage['visited'] = true;
-}
-
-
-
 function init() {
     setSum(0)
+    addRequired()
     console.log("started the js")
 }
 
@@ -60,8 +53,7 @@ function showResult() {
     if (sum < 90) {
         $('#alert-id').hide();
         $('.result-line').addClass("my-2");
-    }
-    else {
+    } else {
         $('#alert-id').show();
     }
 }
