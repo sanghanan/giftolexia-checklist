@@ -1,4 +1,5 @@
 # giftolexia-checklist
 
-[ ] Refactor the code
-[ ] Check for compatitbility on mobile devices
+A checklist to identify if a child is dyslexic. There are multiple checklists based for different age groups.
+
+The html code for the checklist was generated via python scripts.
